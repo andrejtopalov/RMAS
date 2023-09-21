@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "875365458583",
+    "project_id": "locastory-1fcb2",
+    "storage_bucket": "locastory-1fcb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875365458583:android:948e93b3315c0fd317bfd2",
+        "android_client_info": {
+          "package_name": "com.example.locastory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875365458583-irp18q0844eih89m55usk02gbfd8u2h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACgYyCiWK3NIdi7UKFmnIQbMGFhvZkYNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875365458583-irp18q0844eih89m55usk02gbfd8u2h4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
