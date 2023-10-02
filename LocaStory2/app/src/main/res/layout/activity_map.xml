@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity"
+    android:background="@color/background">
+
+
+    <EditText
+        android:id="@+id/etDistance"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="Radius"
+        android:ems="10"
+        android:hint="@string/radius"
+        android:inputType="numberDecimal"
+        android:textColorHint="#E0F2F1"
+        app:layout_constraintBottom_toTopOf="@+id/mapView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/btnDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/radiusbtn"
+        app:layout_constraintBottom_toBottomOf="@+id/etDistance"
+        app:layout_constraintStart_toEndOf="@+id/etDistance"
+        app:layout_constraintTop_toTopOf="@+id/etDistance"
+        app:srcCompat="@drawable/distance_icon"
+        tools:ignore="VisualLintBounds,RedundantDescriptionCheck" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="389dp"
+        android:layout_height="610dp"
+        android:contentDescription="@string/map_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/input_bg"
+        android:paddingHorizontal="15dp"
+        android:text="@string/AddStory"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/mapView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDistance"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
